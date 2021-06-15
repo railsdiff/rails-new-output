@@ -24,4 +24,10 @@ Railsdiff::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+
+  # Allow pass debug_assets=true as a query parameter to load pages with unpackaged assets
+  config.assets.allow_debugging = true
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
 end
